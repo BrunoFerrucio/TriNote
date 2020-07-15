@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:screenOrientation="portrait"
+        tools:context=".Cadastro2">
+
+        <TextView
+            android:id="@+id/Faixa2"
+            android:layout_width="408dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bluemag"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="303dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="28dp"
+            android:text="Estamos quase lá..."
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="@+id/Faixa2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:textAllCaps="false" />
+
+        <EditText
+            android:id="@+id/EdtTele"
+            android:layout_width="242dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="85dp"
+            android:ems="10"
+            android:hint="Digite seu telefone"
+            android:inputType="phone"
+            android:maxLength="15"
+            android:phoneNumber="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Faixa2" />
+
+        <EditText
+            android:id="@+id/Pass1"
+            android:layout_width="238dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="85dp"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="Digite sua senha"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EdtTele" />
+
+        <ImageButton
+            android:id="@+id/BtnVisible01"
+            android:layout_width="52dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="173dp"
+            android:layout_marginEnd="6dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintStart_toEndOf="@+id/Pass1"
+            app:layout_constraintTop_toBottomOf="@+id/Faixa2"
+            app:srcCompat="@drawable/ic_visibility_off" />
+
+        <EditText
+            android:id="@+id/Pass2"
+            android:layout_width="238dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="85dp"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="Reescreva sua senha"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Pass1" />
+
+        <ImageButton
+            android:id="@+id/BtnVisible02"
+            android:layout_width="56dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="6dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Pass2"
+            app:layout_constraintTop_toBottomOf="@+id/BtnVisible01"
+            app:srcCompat="@drawable/ic_visibility_off" />
+
+        <CheckBox
+            android:id="@+id/CBox"
+            android:layout_width="33dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Pass2" />
+
+        <Button
+            android:id="@+id/BtnCad"
+            android:layout_width="122dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="156dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/fund"
+            android:text="Concluir"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CBox" />
+
+        <TextView
+            android:id="@+id/CadNomeusu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="173dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="179dp"
+            android:layout_marginBottom="32dp"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/EdtTele"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Faixa2" />
+
+        <TextView
+            android:id="@+id/CadTxtInfoSenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="81dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="76dp"
+            android:layout_marginBottom="18dp"
+            android:text="A senha deve conter no minímo 7 caracters"
+            android:textColor="@color/colorPrimaryDark"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/Pass2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Pass1" />
+
+        <TextView
+            android:id="@+id/txtBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="55dp"
+            android:text="Termos de uso"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/CBox"
+            app:layout_constraintTop_toBottomOf="@+id/Pass2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

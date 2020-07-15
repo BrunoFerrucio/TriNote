@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Cad1Fund"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:screenOrientation="portrait"
+        tools:context=".Cadastro">
+
+        <ImageView
+            android:id="@+id/Faixa2"
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            android:background="@drawable/bluemag"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="171dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/fa_a_parte"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="@+id/Faixa2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:textAllCaps="false" />
+
+        <ImageView
+            android:id="@+id/imagePerfil"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="-1dp"
+            app:layout_constraintEnd_toStartOf="@+id/CadBtnImagPerf"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Faixa2"
+            app:srcCompat="@drawable/ic_person"
+            android:contentDescription="@string/campo_de_visaliza_o_de_foto_de_perfil" />
+
+        <Button
+            android:id="@+id/CadBtnImagPerf"
+            android:layout_width="137dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/fund_add_foto_cad1"
+            android:text="@string/adicionar_foto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imagePerfil"
+            app:layout_constraintTop_toBottomOf="@+id/Faixa2" />
+
+        <EditText
+            android:id="@+id/CadUsuNome"
+            android:layout_width="236dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="@string/digite_seu_nome"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagePerfil"
+            android:autofillHints="AUTOFILL_HINT_PERSON_NAME_PREFIX" />
+
+        <EditText
+            android:id="@+id/CadUsuName"
+            android:layout_width="239dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="35dp"
+            android:cursorVisible="true"
+            android:ems="10"
+            android:hint="@string/digite_nome_de_usuario"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CadUsuNome"
+            android:autofillHints="AUTOFILL_HINT_PERSON_NAME_PREFIX" />
+
+        <EditText
+            android:id="@+id/CadMail"
+            android:layout_width="238dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="35dp"
+            android:ems="10"
+            android:hint="@string/digite_e_mail"
+            android:inputType="textEmailAddress"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CadUsuName" />
+
+        <EditText
+            android:id="@+id/CadMail2"
+            android:layout_width="239dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="35dp"
+            android:ems="10"
+            android:hint="@string/reescreva_e_mail"
+            android:inputType="textEmailAddress"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CadMail" />
+
+        <Button
+            android:id="@+id/btnProx"
+            android:layout_width="115dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="238dp"
+            android:layout_marginTop="57dp"
+            android:layout_marginEnd="47dp"
+            android:layout_marginBottom="29dp"
+            android:background="@drawable/fund"
+            android:text="@string/pr_ximo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CadMail2" />
+
+        <ImageButton
+            android:id="@+id/LogBtnExclamaUsu"
+            android:layout_width="37dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="14dp"
+            android:background="@drawable/fund_btn_exclama"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toEndOf="@+id/CadUsuNome"
+            app:layout_constraintTop_toBottomOf="@+id/CadBtnImagPerf"
+            app:srcCompat="@drawable/ic_exclamacao"
+            android:contentDescription="@string/bot_o_para_proxima_tela" />
+
+        <ImageButton
+            android:id="@+id/btnExclamaUsuario"
+            android:layout_width="37dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="14dp"
+            android:background="@drawable/fund_btn_exclama"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/CadUsuName"
+            app:layout_constraintTop_toBottomOf="@+id/LogBtnExclamaUsu"
+            app:srcCompat="@drawable/ic_exclamacao"
+            android:contentDescription="@string/informa_es_do_campo" />
+
+        <ImageButton
+            android:id="@+id/btnExclamaEmail"
+            android:layout_width="37dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="82dp"
+            android:layout_marginEnd="14dp"
+            android:background="@drawable/fund_btn_exclama"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/CadMail"
+            app:layout_constraintTop_toBottomOf="@+id/btnExclamaUsuario"
+            app:srcCompat="@drawable/ic_exclamacao"
+            android:contentDescription="@string/informa_es_do_campo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

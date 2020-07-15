@@ -1,0 +1,2 @@
+rootProject.name='TriNote'
+include ':app'

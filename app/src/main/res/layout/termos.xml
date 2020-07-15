@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Termos">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Termos de Uso e Serviço do TriNote"
+                android:textAlignment="center"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="19sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="13dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Bem-vindo ao TriNote! Convidamos você a acessar nosso site e a usar o serviço TriNote, mas por favor note que o convite, está sujeito à sua análise e concordância com estes Termos de Uso. Este documento descreve detalhadamente os seus direitos e os nossos direitos com relação à prestação do Serviço (como definido abaixo), portanto leia estes Termos cuidadosamente."
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="18sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="13dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="O Que São os Termos de Uso?"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text='Os Termos de Uso constituem um contrato entre a TriNote e você. Os Termos incluem as provisões estabelecidas neste documento e na Política de Privacidade da TriNote e em outros termos ou condições que podem ser apresentadas a nós e aceitas por você de tempos em tempos em conexão com ofertas específicas do Serviço (todas as quais referimos coletivamente como os "Termos de Serviço" ou "Termos"). Se você não está de acordo com estes Termos, você não possui o direito de acessar ou usar os nossos Serviços. Se você se registrar ou usar de qualquer outra forma nossos Serviços, você será obrigado a confirmar sua aceitação dos Termos e sua concordância em ser uma parte deste contrato jurídico. '
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text='Ao utilizar o Serviço, você reconhece, aceita e concorda com todas as provisões da Política de Privacidade, incluindo, sem limitação, o uso e tratamento do texto, imagens e outros dados que você escolha colocar, enviar ou armazenar no TriNote (conjuntamente, "Conteúdos") e suas informações pessoais de acordo com tal Política de Privacidade.'
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="18sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="13dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="O que é a TriNote?"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text='O Software TriNote (conforme definido abaixo), o serviço TriNote, e outros produtos serviços e sites hospedados ou disponibilizados pela TriNote, incluindo, por exemplo nosso App e Site são coletivamente referidos nestes Temos como o "Serviço". Em troca de ser autorizado a usar o Serviço, você concorda em cumprir estes Termos.'
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

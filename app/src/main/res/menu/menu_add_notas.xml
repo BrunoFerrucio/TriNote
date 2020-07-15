@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/MenuAddImagem"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:title="Adicionar imagem"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/MenuAddNotaShare"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="Compartilhar"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/MenuAddNotaDelete"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="Apagar anotação"
+        app:showAsAction="always" />
+
+    <!--<item
+        android:id="@+id/MenuAddQRCode"
+        android:icon="@drawable/ic_qrcode"
+        android:title="Gerar QRCode da anotação"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/MenuAddLerQR"
+        android:icon="@drawable/ic_camera"
+        android:title="Ler QRCode"
+        app:showAsAction="never" />-->
+
+    <item
+        android:id="@+id/MenuAddFonte"
+        android:icon="@drawable/ic_font"
+        android:title="Mudar fonte"
+        app:showAsAction="always"/>
+</menu>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <!--<item
+        android:id="@+id/Procurar"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Buscar"
+        app:actionViewClass="android.widget.SearchView" />-->
+    <item
+        android:id="@+id/Tema"
+        android:icon="@drawable/escuro"
+        android:title="Modo escuro"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Config"
+        android:title="Configurações"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/Logof"
+        android:title="Sair"
+        app:showAsAction="never"/>
+
+</menu>

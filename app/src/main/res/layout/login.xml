@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:screenOrientation="portrait"
+        tools:context=".Login">
+
+        <TextView
+            android:id="@+id/Faixa1"
+            android:layout_width="289dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bluemag"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="105dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/login"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/LogEdtMostra"
+            android:layout_width="159dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="4dp"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="19sp"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="@+id/Faixa1" />
+
+        <ImageView
+            android:id="@+id/Logo"
+            android:layout_width="70dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Faixa1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo"
+            android:contentDescription="@string/logo" />
+
+        <EditText
+            android:id="@+id/LogEdtUsu"
+            android:layout_width="238dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="78dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="78dp"
+            android:ems="10"
+            android:hint="@string/insira_seu_usuario"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Faixa1"
+            android:autofillHints="AUTOFILL_HINT_USERNAME" />
+
+        <EditText
+            android:id="@+id/LogEdtPass"
+            android:layout_width="239dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="77dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="77dp"
+            android:ems="10"
+            android:hint="@string/insira_sua_senha"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LogEdtUsu"
+            android:fontFamily="sans-serif"
+            android:autofillHints="AUTOFILL_HINT_PASSWORD" />
+
+        <ImageButton
+            android:id="@+id/BtnVisibleOff"
+            android:layout_width="56dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="107dp"
+            android:layout_marginEnd="6dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/LogEdtPass"
+            app:layout_constraintTop_toBottomOf="@+id/Logo"
+            app:srcCompat="@drawable/ic_visibility_off"
+            android:contentDescription="@string/visualize_sua_senha" />
+
+        <Button
+            android:id="@+id/LogBtnLogar"
+            android:layout_width="114dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="152dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="153dp"
+            android:background="@drawable/fund"
+            android:text="@string/login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LogEdtPass" />
+
+        <Button
+            android:id="@+id/LogBtnEsqueci"
+            android:layout_width="203dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="95dp"
+            android:background="@android:color/transparent"
+            android:text="@string/esqueci_minha_senha"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LogBtnLogar" />
+
+        <Button
+            android:id="@+id/LogBtnCadas"
+            android:layout_width="212dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="87dp"
+            android:layout_marginTop="51dp"
+            android:layout_marginEnd="94dp"
+            android:background="@android:color/transparent"
+            android:text="@string/cadastre_se"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LogBtnEsqueci" />
+
+        <ImageButton
+            android:id="@+id/BtnExclamaNome"
+            android:layout_width="37dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="43dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/fund_btn_exclama"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/LogEdtUsu"
+            app:layout_constraintTop_toBottomOf="@+id/Logo"
+            app:srcCompat="@drawable/ic_exclamacao"
+            android:contentDescription="@string/informa_o_sobre_campo" />
+
+        <Button
+            android:id="@+id/LogFale"
+            android:layout_width="177dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="69dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="27dp"
+            android:background="@android:color/transparent"
+            android:text="@string/problemas"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LogBtnCadas" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

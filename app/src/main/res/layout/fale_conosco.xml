@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".FaleConosco">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="290dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="32dp"
+            android:entries="@array/ArraySipnner"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/FaleUsoNome"
+            android:layout_width="245dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="83dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="83dp"
+            android:ems="10"
+            android:hint="Digite seu nome"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+        <EditText
+            android:id="@+id/FaleUsuMail"
+            android:layout_width="244dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="83dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="83dp"
+            android:ems="10"
+            android:hint="Digite seu e-mail"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/FaleUsoNome" />
+
+        <EditText
+            android:id="@+id/FaleUsuProb"
+            android:layout_width="244dp"
+            android:layout_height="143dp"
+            android:layout_marginStart="83dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="83dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Digite sua mensagem"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:maxLines="5"
+            android:singleLine="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/FaleUsuMail" />
+
+        <Button
+            android:id="@+id/FaleUsuBtnEnviar"
+            android:layout_width="114dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="168dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/fund"
+            android:text="Enviar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/FaleUsuProb" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

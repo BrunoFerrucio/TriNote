@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Principal">
+        <menu>
+            <item
+                android:id="@+id/navPerfil"
+                android:icon="@drawable/ic_person"
+                android:title="Perfil" />
+            <item
+                android:id="@+id/navHome"
+                android:icon="@drawable/ic_home"
+                android:title="Anotações" />
+            <!--<item
+                android:id="@+id/navGrupos"
+                android:icon="@drawable/ic_group"
+                android:title="Grupos" />-->
+        </menu>
+    </item>
+
+    <item android:title="Amizades">
+        <menu>
+            <item
+                android:id="@+id/navAmigos"
+                android:icon="@drawable/ic_people"
+                android:title="Amigos"/>
+        </menu>
+    </item>
+
+
+    <item android:title="Premium">
+        <menu>
+            <item
+                android:id="@+id/navAssina"
+                android:icon="@drawable/ic_cached"
+                android:title="Status assinatura" />
+            <!--<item
+                android:id="@+id/navPagamento"
+                android:icon="@drawable/ic_payment"
+                android:title="Forma de pagamento" />
+            <item
+                android:id="@+id/navBeneficios"
+                android:icon="@drawable/ic_show_chart"
+                android:title="Benefícios"/>-->
+        </menu>
+    </item>
+    <!--<group android:id="@+id/Config">
+        <item
+            android:id="@+id/navConfig"
+            android:icon="@drawable/ic_settings"
+            android:title="Configurações"/>
+    </group>-->
+
+    <group android:id="@+id/Fale">
+        <!--<item
+            android:id="@+id/navDuvi"
+            android:title="Dúvidas Frequentes" />-->
+        <item
+            android:id="@+id/navFale"
+            android:title="Fale conosco" />
+    </group>
+
+
+    <item
+        android:id="@+id/navLogoff"
+        android:title="Logoff"/>
+</menu>

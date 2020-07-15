@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="11dp"
+    android:background="@drawable/layout_notas">
+
+    <TextView
+        android:id="@+id/NotaTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="24sp"
+        android:text=""
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="17sp" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/NotaCorpo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="300dp"
+        android:text=""
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/NotaImagem"
+        android:layout_width="match_parent"
+        android:layout_height="65dp" />
+
+    <TextView
+        android:id="@+id/IDNotas"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text=""
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/TemaNotas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text=""
+        android:visibility="invisible" />
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">TriNote</string> <!--Nome do aplicativo-->
+
+    <string-array name="ArraySipnner"> <!--Itens do spinner Fale Conosco-->
+        <item>Problemas no login</item>
+        <item>Erro a recuperar senha</item>
+        <item>Outros</item>
+    </string-array>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="login">Login</string>
+    <string name="insira_seu_usuario">Insira seu usuário</string>
+    <string name="insira_sua_senha">Insira sua senha</string>
+    <string name="esqueci_minha_senha">Esqueci minha senha</string>
+    <string name="cadastre_se">Cadastre-se</string>
+    <string name="problemas">Problemas ?</string>
+    <string name="informa_o_sobre_campo">Informações sobre campo</string>
+    <string name="visualize_sua_senha">Visualize sua senha</string>
+    <string name="logo">Logo</string>
+    <string name="fa_a_parte">Faça parte..</string>
+    <string name="campo_de_visaliza_o_de_foto_de_perfil">Campo de visalização de foto de perfil</string>
+    <string name="adicionar_foto">Adicionar foto</string>
+    <string name="digite_seu_nome">Digite seu nome</string>
+    <string name="digite_nome_de_usuario">Digite nome de usuário</string>
+    <string name="digite_e_mail">Digite e-mail</string>
+    <string name="reescreva_e_mail">Reescreva e-mail</string>
+    <string name="pr_ximo">Próximo</string>
+    <string name="informa_es_do_campo">Informações do campo</string>
+    <string name="bot_o_para_proxima_tela">Botão para proxima tela</string>
+
+    <string-array name="fontesAlert">
+        <item>Padrão</item>
+        <item>Amatic</item>
+        <item>Dancing</item>
+        <item>Pinyon</item>
+        <item>Press Start</item>
+        <item>Sacramento</item>
+        <item>Tangerine</item>
+    </string-array>
+</resources>
