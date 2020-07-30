@@ -10,3 +10,12 @@
 <p>- SQLite</p>
 
 <p>Para página de WebApi, utilizei Asp.NET MVC, hospedado no Azure.</p>
+
+<br />
+
+<h3>Diferenciais</h3>
+------------
+1. Anotações criadas no smatphone são atualizadas instantaneamente no banco de dados, evitando assim que ela não fique alocada somente no smartphone do usuário.
+2. As anotações ficam salvam no smartphone do usuário também, para caso de algum erro de conexão ou o próprio usuário esteja offline.
+3. Imagens salvas nas anotações podem serem vistas na tela principal, não sendo necessario abrir a anotação para vela.
+<br />
