@@ -22,6 +22,7 @@
 <br />
 
 <h3 id="h3-imagens-das-telas"><a name="Imagens das telas" class="reference-link"></a><span class="header-link octicon octicon-link"></span>Imagens das telas</h3>
+<hr>
 <p><img src="https://i.imgur.com/4PxsovD.png?1" alt=""></p>
 <p><img src="https://i.imgur.com/WCYGxYw.jpg?2" alt="Splash Screen"> —&gt;<img src="https://i.imgur.com/g64L7Lr.jpg?1" alt="Tela de login" title="Tela de login"></p>
 <h4 id="h4-cadastro"><a name="Cadastro" class="reference-link"></a><span class="header-link octicon octicon-link"></span>Cadastro</h4>
