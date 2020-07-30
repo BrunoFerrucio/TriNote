@@ -23,7 +23,7 @@
 
 <h3>Imagens das telas</h3>
 ------------
-<P>![](https://i.imgur.com/4PxsovD.png?1)</p>
+<P>https://i.imgur.com/4PxsovD.png?1</p>
 
 <P>![Splash Screen](https://i.imgur.com/WCYGxYw.jpg?2) -->![Tela de login](https://i.imgur.com/g64L7Lr.jpg?1 "Tela de login")</p>
 
