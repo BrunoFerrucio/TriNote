@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.TriNote">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -22,8 +23,13 @@
         android:screenOrientation="locked"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:usesCleartextTraffic="true">
-        <activity android:name=".Receber_intent">
+        android:usesCleartextTraffic="true"
+        android:fullBackupContent="true"
+        tools:targetApi="m"
+        android:largeHeap="true"
+        android:hardwareAccelerated="false">
+        <activity android:name=".Receber_intent"
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
 
@@ -53,7 +59,8 @@
         <activity android:name=".Cadastro2" />
         <activity android:name=".Cadastro1" />
         <activity android:name=".Login" />
-        <activity android:name=".Splash">
+        <activity android:name=".Splash"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
